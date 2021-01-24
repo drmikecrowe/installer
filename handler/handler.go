@@ -59,7 +59,7 @@ type Handler struct {
 
 func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {
-		http.Redirect(w, r, "https://github.com/jpillora/installer", http.StatusMovedPermanently)
+		http.Redirect(w, r, "https://github.com/drmikecrowe/installer", http.StatusMovedPermanently)
 		return
 	}
 	//calculate reponse type
@@ -143,7 +143,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			}
 			fmt.Fprintf(w, "move-into-path: %v\n", q.MoveToPath)
 			fmt.Fprintf(w, "\nto see shell script, visit:\n  %s%s?type=script\n", r.Host, r.URL.String())
-			fmt.Fprintf(w, "\nfor more information on this server, visit:\n  github.com/jpillora/installer\n")
+			fmt.Fprintf(w, "\nfor more information on this server, visit:\n  github.com/drmikecrowe/installer\n")
 			return
 		}
 		showError("Unknown type", http.StatusInternalServerError)
