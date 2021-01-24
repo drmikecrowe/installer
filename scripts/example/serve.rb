@@ -18,6 +18,6 @@ class Serve < Formula
   end
 
   def caveats
-    "serve was installed using github.com/drmikecrowe/installer"
+    "serve was installed using github.com/jpillora/installer"
   end
 end

@@ -1,4 +1,4 @@
-module github.com/drmikecrowe/installer
+module github.com/jpillora/installer
 
 go 1.14
 
